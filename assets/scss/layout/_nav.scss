@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------------ */
+/* nav
+/* ------------------------------------------------------------------ */
+
+nav {
+    @include max-screen(992px) {
+        display: none;
+        background-color: rgba(0, 0, 0, .80);
+        padding-bottom: 15px;
+    }
+    ul {
+        width: auto;
+        float: right;
+        @include max-screen(992px) {
+            float: none;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            @include max-screen(992px) {
+                display: block;
+                float: none;
+            }
+            a {
+                color: $color-secondary;
+                font-size: 1em;
+                letter-spacing: 2px;
+                line-height: 4;
+                font-family: $font-sans-light;
+                padding: 10px 20px;
+                display: block;
+                @include max-screen(992px) {
+                    line-height: 2;
+                }
+                &:hover {
+                    color: $color-tertiary;
+                }
+            }
+        }
+    }
+}

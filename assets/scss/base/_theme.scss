@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------------ */
+/* Color & Theming
+/* ------------------------------------------------------------------ */
+$color-primary:#1006FF;/*BLUE*/
+$color-secondary: #FFFFFF;/*WHITE*/
+$color-tertiary: #F9592C;/*ORANGE*/
+$color-complement:#10324C;/*VERY DEEP BLUE*/
+$color-light:#eff1f7;/*LIGHT GRAY*/
+$color-text:#10324C;/*VERY DEEP BLUE*/
+
+$color-link:#10324C;/*VERY DEEP BLUE*/
+$color-hover:#10324C;/*VERY DEEP BLUE*/
+
+$color-border: #eff1f7;/*LIGHT GRAY*/
+$color-table-border: #eff1f7;/*LIGHT GRAY*/
+$color-table-thead: #eff1f7;/*LIGHT GRAY*/
+$color-table-bg: #ffffff;/*WHITE*/
+$color-table-odd: #eff1f7;/*LIGHT GRAY*/
+
+/*@font-face setting in default.scss*/
+$font-sans: 'montserrat', sans-serif;
+$font-sans-light: 'montserratLight', sans-serif;
+$font-sans-bold: 'montserratBold', sans-serif;
+$font-serif: 'Georgia', serif;
