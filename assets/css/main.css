@@ -3014,27 +3014,24 @@ nav ul li a:hover {
   background-position: center center;
 }
 
-#section1 .intro h1 {
-  font-size: 6em;
-  line-height: 1.1;
-  color: #FFFFFF;
-  font-family: "montserratBold", sans-serif;
-  opacity: 0;
-}
-
 #section2 {
   background-image: url("../images/banner2@2x.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
 }
 
-#section2 .intro h1 {
-  font-size: 6em;
+.intro h1 {
+  font-size: 1em;
   line-height: 1.1;
   color: #FFFFFF;
   font-family: "montserratBold", sans-serif;
   opacity: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .intro h1 {
+    font-size: 1em;
+  }
 }
 
 /* ------------------------------------------------------------------ */
