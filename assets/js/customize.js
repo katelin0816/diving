@@ -9,9 +9,7 @@ $(document).ready(function() {
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         sectionsColor: ['#333', '#666', '#999'],
         navigation: true,
-        scrollingSpeed: 1000,
         verticalCentered: false,
-        css3: false,
         touchSensitivity: 5,
         scrollOverflow: true,
         scrollOverflowOptions: {
