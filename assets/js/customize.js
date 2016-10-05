@@ -10,6 +10,7 @@ $(document).ready(function() {
         sectionsColor: ['#333', '#666', '#999'],
         navigation: true,
         verticalCentered: false,
+        css3: false,
         touchSensitivity: 5,
         scrollOverflow: true,
         scrollOverflowOptions: {
