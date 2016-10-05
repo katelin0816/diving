@@ -3,6 +3,10 @@
 -----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 
+    pic = new Image();
+    pic2 = new Image();
+    pic.src = "../images/banner1.jpg";
+    pic2.src = "../images/banner2.jpg";
 
     //fullpage js
     $('#fullpage').fullpage({
