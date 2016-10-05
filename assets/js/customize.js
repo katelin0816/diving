@@ -8,11 +8,6 @@ $(document).ready(function() {
     pic.src = "assets/images/banner1.jpg";
     pic2.src = "assets/images/banner2.jpg";
 
-    // Remove min-height on iOS after slideshow initialization
-    var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
-    if (iOS && $('.intro').css('height') == '100vh') {
-        $('.intro').css('height', 'auto');
-    }
 
     //fullpage js
     $('#fullpage').fullpage({
