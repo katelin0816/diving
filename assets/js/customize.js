@@ -6,8 +6,8 @@ $(document).ready(function() {
 
     //fullpage js
     $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-        sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#333', '#666', '#999'],
         navigation: true,
         scrollingSpeed: 1000,
         verticalCentered: false,
