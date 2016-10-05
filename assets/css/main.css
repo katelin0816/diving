@@ -3077,7 +3077,7 @@ nav ul li a:hover {
   position: absolute;
   width: 22px;
   height: 42px;
-  bottom: -20px;
+  bottom: 0px;
   left: 50%;
   margin-left: -12px;
   border-radius: 15px;
