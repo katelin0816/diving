@@ -13,7 +13,6 @@ $(document).ready(function() {
         touchSensitivity: 1,
         scrollingSpeed: 500,
         easing: 'easeInOutCubic',
-        autoScrolling:false,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
