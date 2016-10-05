@@ -35,7 +35,6 @@
         opacity: 0;
         @include max-screen(992px) {
             font-size: 2.2em;
-            text-align: center;
         }
     }
     a {
@@ -50,7 +49,7 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {
-            line-height: 2;
+          padding: 10px 17px;
         }
         &:hover {
             background-color: $color-tertiary;
