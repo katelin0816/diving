@@ -11,6 +11,8 @@ $(document).ready(function() {
         verticalCentered: false,
         css3: false,
         touchSensitivity: 1,
+        scrollingSpeed: 500,
+        easing: 'easeInOutCubic',
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
