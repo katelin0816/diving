@@ -3034,6 +3034,8 @@ nav ul li a:hover {
 }
 
 .intro {
+  display: table-cell;
+  vertical-align: middle;
   height: 100vh;
 }
 
@@ -3048,7 +3050,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 992px) {
   .intro h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 }
 
