@@ -3010,11 +3010,13 @@ nav ul li a:hover {
 #section1 {
   background-image: url("../images/banner1@2x.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #section2 {
   background-image: url("../images/banner2@2x.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .intro h1 {
