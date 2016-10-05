@@ -8,6 +8,12 @@ $(document).ready(function() {
     pic.src = "assets/images/banner1.jpg";
     pic2.src = "assets/images/banner2.jpg";
 
+    // Remove min-height on iOS after slideshow initialization
+    var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
+    if (iOS && $('.intro').css('min-height') == '100vh') {
+        $('.intro').css('min-height', '0');
+    }
+
     //fullpage js
     $('#fullpage').fullpage({
         sectionsColor: ['#333', '#666', '#999'],
