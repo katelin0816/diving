@@ -3029,17 +3029,9 @@ nav ul li a:hover {
   background-attachment: inherit;
 }
 
-.relative {
-  position: relative;
-}
-
-.h100 {
-  height: 100%;
-}
-
 .intro {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   position: relative;
 }
 
@@ -3150,31 +3142,6 @@ nav ul li a:hover {
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
-  }
-}
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .intro {
-    height: 1024px;
-  }
-}
-
-/**
-* iPad with landscape orientation.
-*/
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  .intro {
-    height: 768px;
-  }
-}
-
-/**
-* iPhone 5
-* You can also target devices with aspect ratio.
-*/
-@media screen and (device-aspect-ratio: 40 / 71) {
-  .intro {
-    height: 500px;
   }
 }
 
