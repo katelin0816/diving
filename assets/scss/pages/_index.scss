@@ -1,29 +1,36 @@
 /* ------------------------------------------------------------------ */
 /* index
 /* ------------------------------------------------------------------ */
-#section1 {
-    background-image: url('../images/banner1.jpg');
-}
-#section2 {
-    background-image: url('../images/banner2.jpg');
-}
 #section1,
 #section2 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     @include max-screen(992px) {
-      background-attachment: inherit;
+        background-attachment: inherit;
     }
 }
+#section1 {
+    background-image: url('../images/banner1.jpg');
+}
+#section2 {
+    background-image: url('../images/banner2.jpg');
+}
 #section3 {}
-.intro h1 {
-    font-size: 6em;
-    line-height: 1.1;
-    color: $color-secondary;
-    font-family: $font-sans-bold;
-    opacity: 0;
-    @include max-screen(992px) {
-        font-size: 1em;
+.relative {
+    position: relative;
+}
+.intro {
+    height: 100vh;
+    h1 {
+        vertical-align: middle;
+        font-size: 6em;
+        line-height: 1.1;
+        color: $color-secondary;
+        font-family: $font-sans-bold;
+        opacity: 0;
+        @include max-screen(992px) {
+            font-size: 1em;
+        }
     }
 }

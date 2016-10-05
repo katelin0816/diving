@@ -3007,14 +3007,6 @@ nav ul li a:hover {
 /* ------------------------------------------------------------------ */
 /* index
 /* ------------------------------------------------------------------ */
-#section1 {
-  background-image: url("../images/banner1.jpg");
-}
-
-#section2 {
-  background-image: url("../images/banner2.jpg");
-}
-
 #section1,
 #section2 {
   background-size: cover;
@@ -3029,7 +3021,24 @@ nav ul li a:hover {
   }
 }
 
+#section1 {
+  background-image: url("../images/banner1.jpg");
+}
+
+#section2 {
+  background-image: url("../images/banner2.jpg");
+}
+
+.relative {
+  position: relative;
+}
+
+.intro {
+  height: 100vh;
+}
+
 .intro h1 {
+  vertical-align: middle;
   font-size: 6em;
   line-height: 1.1;
   color: #FFFFFF;

@@ -35,6 +35,9 @@ $(document).ready(function() {
                 $('#section2').find('h1').delay(800).css({
                     opacity: 0,
                 });
+                $('#section3').find('h1').delay(800).css({
+                    opacity: 0,
+                });
             }
 
             //section 2
@@ -55,6 +58,9 @@ $(document).ready(function() {
 
             //section 3
             if (index == 3) {
+                $('#section3').find('h1').delay(800).css({
+                    opacity: 1,
+                });
                 $('header').css({
                     backgroundColor: 'rgba(0,0,0,0.8)',
                     transition: '1.0s'
