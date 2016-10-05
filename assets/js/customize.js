@@ -10,8 +10,8 @@ $(document).ready(function() {
         sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
         navigation: true,
         scrollingSpeed: 1000,
-        easing: 'easeInOutCubic',
         css3: false,
+        verticalCentered: false,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
