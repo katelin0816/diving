@@ -30,7 +30,7 @@
         font-family: $font-sans-bold;
         opacity: 0;
         @include max-screen(992px) {
-            font-size: 1em;
+            font-size: 2em;
         }
     }
 }
