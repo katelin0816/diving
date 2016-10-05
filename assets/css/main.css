@@ -3069,12 +3069,6 @@ nav ul li a:hover {
   display: block;
 }
 
-@media screen and (max-width: 992px) {
-  .intro a {
-    padding: 10px 17px;
-  }
-}
-
 .intro a:hover {
   background-color: #F9592C;
 }

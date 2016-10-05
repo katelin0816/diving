@@ -49,7 +49,6 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {
-          padding: 10px 17px;
         }
         &:hover {
             background-color: $color-tertiary;
