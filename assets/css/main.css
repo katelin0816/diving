@@ -3007,6 +3007,14 @@ nav ul li a:hover {
 /* ------------------------------------------------------------------ */
 /* index
 /* ------------------------------------------------------------------ */
+#section1 {
+  /*background-image: url('../images/banner1@2x.jpg');*/
+}
+
+#section2 {
+  /*background-image: url('../images/banner2@2x.jpg');*/
+}
+
 #section1,
 #section2 {
   background-size: cover;
