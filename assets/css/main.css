@@ -3037,6 +3037,7 @@ nav ul li a:hover {
   display: table-cell;
   vertical-align: middle;
   height: 100vh;
+  overflow: hidden;
 }
 
 .intro h1 {
