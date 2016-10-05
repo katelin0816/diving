@@ -12,10 +12,10 @@ $(document).ready(function() {
         css3: false,
         touchSensitivity: 1,
         scrollingSpeed: 500,
-        scrollOverflow: true,
-        scrollOverflowOptions: {
-            click: true
-        },
+        //scrollOverflow: true,
+        //scrollOverflowOptions: {
+            //click: true
+        //},
         afterLoad: function(anchorLink, index) {
 
             $(".iScrollIndicator").css({
