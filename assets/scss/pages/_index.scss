@@ -21,12 +21,13 @@
     position: relative;
 }
 .intro {
-    display: table-cell;
-    vertical-align: middle;
+    width: 100%;
     height: 100vh;
-    overflow: hidden;
+    position: relative;
     h1 {
-        vertical-align: middle;
+        position: absolute;
+        bottom: 170px;
+        width: 100%;
         font-size: 6em;
         line-height: 1.1;
         color: $color-secondary;
@@ -34,6 +35,25 @@
         opacity: 0;
         @include max-screen(992px) {
             font-size: 2.2em;
+            text-align: center;
+        }
+    }
+    a {
+        position: absolute;
+        bottom: 100px;
+        color: $color-secondary;
+        background-color: $color-primary;
+        font-size: 1em;
+        letter-spacing: 3px;
+        text-align: center;
+        padding: 20px 35px;
+        border-radius: 100px;
+        display: block;
+        @include max-screen(992px) {
+            line-height: 2;
+        }
+        &:hover {
+            background-color: $color-tertiary;
         }
     }
 }

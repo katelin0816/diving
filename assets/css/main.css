@@ -3034,14 +3034,15 @@ nav ul li a:hover {
 }
 
 .intro {
-  display: table-cell;
-  vertical-align: middle;
+  width: 100%;
   height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .intro h1 {
-  vertical-align: middle;
+  position: absolute;
+  bottom: 170px;
+  width: 100%;
   font-size: 6em;
   line-height: 1.1;
   color: #FFFFFF;
@@ -3052,7 +3053,31 @@ nav ul li a:hover {
 @media screen and (max-width: 992px) {
   .intro h1 {
     font-size: 2.2em;
+    text-align: center;
   }
+}
+
+.intro a {
+  position: absolute;
+  bottom: 100px;
+  color: #FFFFFF;
+  background-color: #1006FF;
+  font-size: 1em;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 100px;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .intro a {
+    line-height: 2;
+  }
+}
+
+.intro a:hover {
+  background-color: #F9592C;
 }
 
 /* ------------------------------------------------------------------ */
