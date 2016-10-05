@@ -14,7 +14,7 @@ $(document).ready(function() {
         navigation: true,
         verticalCentered: false,
         css3: false,
-        touchSensitivity: 1,
+        touchSensitivity: 5,
         scrollingSpeed: 500,
         scrollOverflow: true,
         scrollOverflowOptions: {
