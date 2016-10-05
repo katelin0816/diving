@@ -10,8 +10,8 @@ $(document).ready(function() {
         sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
         navigation: true,
         scrollingSpeed: 1000,
-        css3: false,
         verticalCentered: false,
+        css3: false,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
