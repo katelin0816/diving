@@ -7,9 +7,16 @@ $(document).ready(function() {
     //fullpage js
     $('#fullpage').fullpage({
         sectionsColor: ['#333', '#666', '#999'],
+        navigation: true,
         verticalCentered: false,
         css3: false,
-
+        touchSensitivity: 1,
+        scrollingSpeed: 500,
+        easing: 'easeInOutCubic',
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            click: true
+        },
         afterLoad: function(anchorLink, index) {
 
             $(".iScrollIndicator").css({
