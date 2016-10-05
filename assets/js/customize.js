@@ -32,7 +32,8 @@ $(document).ready(function() {
         }
 
         return false;
-    }
+    };
+    iOS();
 
     //fullpage js
     $('#fullpage').fullpage({
