@@ -9,6 +9,8 @@ $(document).ready(function() {
     pic2.src = "assets/images/banner2.jpg";
 
 
+
+
     //fullpage js
     $('#fullpage').fullpage({
         sectionsColor: ['#333', '#666', '#999'],
