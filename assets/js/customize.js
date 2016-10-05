@@ -3,12 +3,13 @@
 -----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 
+    //預先loading大圖
     pic = new Image();
     pic2 = new Image();
     pic.src = "assets/images/banner1.jpg";
     pic2.src = "assets/images/banner2.jpg";
 
-
+    //判斷如果是ios設備
     function iOS() {
 
         var iDevices = [
