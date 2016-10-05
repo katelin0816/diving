@@ -9,7 +9,30 @@ $(document).ready(function() {
     pic2.src = "assets/images/banner2.jpg";
 
 
+    function iOS() {
 
+        var iDevices = [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+        ];
+
+        if (!!navigator.platform) {
+            while (iDevices.length) {
+                if (navigator.platform === iDevices.pop()) {
+                    $('.intro').css({
+                        height: "100vh",
+                    });
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
 
     //fullpage js
     $('#fullpage').fullpage({
