@@ -10,7 +10,7 @@ $(document).ready(function() {
         navigation: true,
         verticalCentered: false,
         css3: false,
-        touchSensitivity: 5,
+        touchSensitivity: 1,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
