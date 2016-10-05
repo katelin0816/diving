@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     // Remove min-height on iOS after slideshow initialization
     var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
-    if (iOS && $('.intro').css('min-height') == '100vh') {
-        $('.intro').css('min-height', '0');
+    if (iOS && $('.intro').css('height') == '100vh') {
+        $('.intro').css('height', 'auto');
     }
 
     //fullpage js
