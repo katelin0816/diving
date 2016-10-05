@@ -3,13 +3,18 @@
 /* ------------------------------------------------------------------ */
 #section1 {
     background-image: url('../images/banner1@2x.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 #section2 {
     background-image: url('../images/banner2@2x.jpg');
+}
+#section1,
+#section2 {
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
+    @include max-screen(992px) {
+      background-attachment: inherit;
+    }
 }
 #section3 {}
 .intro h1 {
@@ -19,6 +24,6 @@
     font-family: $font-sans-bold;
     opacity: 0;
     @include max-screen(992px) {
-      font-size: 1em;
+        font-size: 1em;
     }
 }
