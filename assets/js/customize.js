@@ -24,7 +24,7 @@ $(document).ready(function() {
             while (iDevices.length) {
                 if (navigator.platform === iDevices.pop()) {
                     $('.intro').css({
-                        height: "100vh",
+                        height: "85vh",
                     });
                     return true;
                 }
