@@ -12,7 +12,7 @@ $(document).ready(function() {
         scrollingSpeed: 1000,
         verticalCentered: false,
         css3: false,
-        touchSensitivity: 20,
+        touchSensitivity: 5,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
