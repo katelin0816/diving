@@ -23,10 +23,13 @@ $(document).ready(function() {
             });
 
             //section 2
-            /*if (index == 1) {
+            if (index == 1) {
                 $('#section1').find('h1').delay(800).css({
                     opacity: 1,
                     transition: '1.0s'
+                });
+                $('#section2').find('h1').delay(800).css({
+                    opacity: 0,
                 });
             }
 
@@ -41,6 +44,9 @@ $(document).ready(function() {
                     backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
                 });
+                $('#section1').find('h1').delay(800).css({
+                    opacity: 0,
+                });
             }
 
             //section 3
@@ -49,7 +55,13 @@ $(document).ready(function() {
                     backgroundColor: 'rgba(0,0,0,0.8)',
                     transition: '1.0s'
                 });
-            }*/
+                $('#section1').find('h1').delay(800).css({
+                    opacity: 0,
+                });
+                $('#section2').find('h1').delay(800).css({
+                    opacity: 0,
+                });
+            }
         }
 
     });
