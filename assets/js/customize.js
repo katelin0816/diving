@@ -53,6 +53,7 @@ $(document).ready(function() {
                 "display": "none"
             });
 
+
             //section 2
             if (index == 1) {
                 $('#section1').find('h1').delay(0).css({
@@ -63,7 +64,6 @@ $(document).ready(function() {
 
             //section 2
             if (index == 2) {
-
                 $('#section2').find('h1').delay(0).css({
                     opacity: 1,
                     transition: '1.0s'
@@ -76,6 +76,10 @@ $(document).ready(function() {
 
             //section 3
             if (index == 3) {
+                $('#section3').find('h1').delay(0).css({
+                    opacity: 1,
+                    transition: '1.0s'
+                });
                 $('header').css({
                     backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
