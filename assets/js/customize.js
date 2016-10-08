@@ -76,10 +76,6 @@ $(document).ready(function() {
 
             //section 3
             if (index == 3) {
-                $('#section3').find('h1').delay(0).css({
-                    opacity: 1,
-                    transition: '1.0s'
-                });
                 $('header').css({
                     backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
