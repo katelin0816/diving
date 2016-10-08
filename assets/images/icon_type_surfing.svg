@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_type_surfing</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="36" height="36">
+            <rect x="-2" y="-2" width="36" height="36" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-282.000000, -9880.000000)">
+            <g id="icon_type_surfing" transform="translate(284.000000, 9882.000000)">
+                <g id="Oval-2">
+                    <use fill="#F9592C" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+                <g id="beach" transform="translate(6.000000, 6.000000)">
+                    <g id="Layer_1"></g>
+                    <g id="surfer" transform="translate(1.900000, 1.900000)" fill="#FFFFFF">
+                        <g id="XMLID_466_">
+                            <path d="M2.3664,16.9936121 L2.37196364,16.9936121 C3.9348303,16.9821242 5.88612121,15.9901485 7.24782121,15.1600848 C9.09639091,14.0332939 11.0438697,12.4834091 12.7313,10.7958758 C15.0003879,8.52689091 16.0395515,5.9279 16.5117394,4.14727879 C16.8822364,2.74972424 16.9724909,1.62937273 16.9936121,1.09279091 L1.56956364,16.5168909 L1.81992727,16.7673061 C1.96494242,16.9123212 2.16147273,16.9936121 2.3664,16.9936121 L2.3664,16.9936121 Z" id="XMLID_467_"></path>
+                            <path d="M6.19773636,4.26236364 C4.51025455,5.94969091 2.96042121,7.89711818 1.83352727,9.74568788 C1.00346364,11.1074394 0.0115393939,13.0587303 2.2043077e-14,14.6217 C-0.00154545455,14.8285848 0.0800030303,15.0274848 0.226409091,15.1737879 L0.476772727,15.4241 L15.9009242,5.15151514e-05 C14.6234,0.0515666667 9.95751818,0.502530303 6.19773636,4.26236364 L6.19773636,4.26236364 Z" id="XMLID_468_"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
