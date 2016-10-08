@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (!!navigator.platform) {
             while (iDevices.length) {
                 if (navigator.platform === iDevices.pop()) {
-                    $('.intro').css({
+                    $('.slogan').css({
                         height: "85vh",
                     });
                     return true;
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     //fullpage js
     $('#fullpage').fullpage({
-        sectionsColor: ['#333', '#666', '#999'],
+        sectionsColor: ['#333', '#666', '#FFF'],
         navigation: true,
         verticalCentered: false,
         css3: false,
@@ -50,20 +50,17 @@ $(document).ready(function() {
         },
         afterLoad: function(anchorLink, index) {
 
-            $(".iScrollIndicator").css({
+            $(".iScrollVerticalScrollbar, .iScrollLoneScrollbar").css({
                 "display": "none"
             });
 
             //section 2
             if (index == 1) {
-                $('#section1').find('h1').delay(800).css({
+                $('#section1').find('h1').delay(0).css({
                     opacity: 1,
                     transition: '1.0s'
                 });
-                $('#section2').find('h1').delay(800).css({
-                    opacity: 0,
-                });
-                $('#section3').find('h1').delay(800).css({
+                $('#section2, #section3').find('h1').delay(0).css({
                     opacity: 0,
                 });
             }
@@ -71,7 +68,7 @@ $(document).ready(function() {
             //section 2
             if (index == 2) {
 
-                $('#section2').find('h1').delay(800).css({
+                $('#section2').find('h1').delay(0).css({
                     opacity: 1,
                     transition: '1.0s'
                 });
@@ -79,24 +76,22 @@ $(document).ready(function() {
                     backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
                 });
-                $('#section1').find('h1').delay(800).css({
+                $('#section1').find('h1').delay(0).css({
                     opacity: 0,
                 });
             }
 
             //section 3
             if (index == 3) {
-                $('#section3').find('h1').delay(800).css({
+                $('#section3').find('h1').delay(0).css({
                     opacity: 1,
+                    transition: '1.0s'
                 });
                 $('header').css({
                     backgroundColor: 'rgba(0,0,0,0.8)',
                     transition: '1.0s'
                 });
-                $('#section1').find('h1').delay(800).css({
-                    opacity: 0,
-                });
-                $('#section2').find('h1').delay(800).css({
+                $('#section1,#section2').find('h1').delay(0).css({
                     opacity: 0,
                 });
             }
