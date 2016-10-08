@@ -2985,9 +2985,9 @@ nav ul li a {
   color: #FFFFFF;
   font-size: 1em;
   letter-spacing: 2px;
-  line-height: 4;
+  line-height: 3;
   font-family: "montserratLight", sans-serif;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: block;
 }
 
@@ -3029,13 +3029,13 @@ nav ul li a:hover {
   background-attachment: inherit;
 }
 
-.slogan {
+.banner {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.slogan h1 {
+.banner h1 {
   position: absolute;
   bottom: 200px;
   width: 100%;
@@ -3047,12 +3047,12 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .slogan h1 {
+  .banner h1 {
     font-size: 2.3em;
   }
 }
 
-.slogan a {
+.banner a {
   position: absolute;
   bottom: 120px;
   width: 170px;
@@ -3069,11 +3069,11 @@ nav ul li a:hover {
   display: block;
 }
 
-.slogan a:hover {
+.banner a:hover {
   background-color: #F9592C;
 }
 
-.slogan .mouse {
+.mouse {
   position: absolute;
   width: 22px;
   height: 42px;
@@ -3086,7 +3086,7 @@ nav ul li a:hover {
   animation: intro 1s;
 }
 
-.slogan .scroll {
+.scroll {
   display: block;
   width: 3px;
   height: 3px;
@@ -3145,12 +3145,12 @@ nav ul li a:hover {
   }
 }
 
-#section3 .intro {
+.intro {
   margin-top: 60px;
   position: relative;
 }
 
-#section3 .intro h1 {
+.intro h1 {
   width: 100%;
   position: absolute;
   opacity: 0;
@@ -3161,12 +3161,12 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  #section3 .intro h1 {
+  .intro h1 {
     font-size: 2.3em;
   }
 }
 
-#section3 .intro p {
+.intro p {
   width: 100%;
   position: absolute;
   font-size: 1.2em;
@@ -3174,45 +3174,46 @@ nav ul li a:hover {
   font-family: "montserratLight", sans-serif;
 }
 
-#section3 .intro .titel-1 {
+.intro .titel-1 {
   top: 100px;
   left: 130px;
   z-index: 200;
 }
 
-#section3 .intro .subtitle-1 {
+.intro .subtitle-1 {
   top: 320px;
   left: 130px;
   z-index: 200;
 }
 
-#section3 .intro .titel-2 {
+.intro .titel-2 {
   top: 100px;
   left: 0;
   z-index: 200;
 }
 
-#section3 .intro .subtitle-2 {
+.intro .subtitle-2 {
   top: 160px;
   left: 0;
   z-index: 200;
 }
 
-#section3 .item {
+.item {
   padding: 10px;
   margin: 0 auto;
 }
 
-#section3 .item a {
+.item a {
   width: 100%;
   height: 100%;
   background-color: #F9592C;
   position: relative;
   overflow: hidden;
   display: block;
+  z-index: 0;
 }
 
-#section3 .item a img {
+.item a img {
   display: block;
   width: 100%;
   height: auto;
@@ -3236,7 +3237,7 @@ nav ul li a:hover {
   transition-duration: 0.4s;
 }
 
-#section3 .item a .button {
+.item a .button {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -3245,19 +3246,10 @@ nav ul li a:hover {
   margin-left: -45px;
   margin-top: -45px;
   border: none;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -moz-transition-property: opacity, transform;
-  -o-transition-property: opacity, transform;
-  -webkit-transition-property: opacity, transform;
-  transition-property: opacity, transform;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  z-index: 1;
 }
 
-#section3 .item a .hover {
+.item a .hover {
   position: absolute;
   width: 94%;
   height: 94%;
@@ -3283,7 +3275,7 @@ nav ul li a:hover {
   transition-duration: 0.3s;
 }
 
-#section3 .item a .button-hover {
+.item a .button-hover {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -3295,7 +3287,7 @@ nav ul li a:hover {
   border: none;
 }
 
-#section3 .item a span {
+.item a span {
   display: block;
   width: 40%;
   margin: 0 auto;
@@ -3306,7 +3298,7 @@ nav ul li a:hover {
   font-size: 0.938rem;
 }
 
-#section3 .item a:hover img {
+.item a:hover img {
   opacity: 0.1;
   filter: alpha(opacity=10);
   -moz-transform: scale3d(1.5, 1.5, 1);
@@ -3316,20 +3308,7 @@ nav ul li a:hover {
   transform: scale3d(1.5, 1.5, 1);
 }
 
-#section3 .item a:hover .button {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -moz-transition-property: visibility, opacity, transform;
-  -o-transition-property: visibility, opacity, transform;
-  -webkit-transition-property: visibility, opacity, transform;
-  transition-property: visibility, opacity, transform;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-#section3 .item a:hover .hover {
+.item a:hover .hover {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -3340,19 +3319,11 @@ nav ul li a:hover {
   transform: scale3d(1, 1, 1);
 }
 
-#section3 .item .icon-play {
-  background-image: url("../images/btn_play.svg");
-}
-
-#section3 .item .icon-play-hover {
+.item .icon-play-hover {
   background-image: url("../images/btn_play_hover.svg");
 }
 
-#section3 .item .icon-arrow {
-  background-image: url("../images/btn_arrow.svg");
-}
-
-#section3 .item .icon-arrow-hover {
+.item .icon-arrow-hover {
   background-image: url("../images/btn_arrow_hover.svg");
 }
 

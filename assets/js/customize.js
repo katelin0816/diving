@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (!!navigator.platform) {
             while (iDevices.length) {
                 if (navigator.platform === iDevices.pop()) {
-                    $('.slogan').css({
+                    $('.banner').css({
                         height: "85vh",
                     });
                     return true;
@@ -41,9 +41,8 @@ $(document).ready(function() {
         sectionsColor: ['#333', '#666', '#FFF'],
         navigation: true,
         verticalCentered: false,
-        css3: false,
-        touchSensitivity: 5,
-        scrollingSpeed: 500,
+        css3: true,
+        touchSensitivity: 15,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: true
@@ -60,9 +59,6 @@ $(document).ready(function() {
                     opacity: 1,
                     transition: '1.0s'
                 });
-                $('#section2, #section3').find('h1').delay(0).css({
-                    opacity: 0,
-                });
             }
 
             //section 2
@@ -76,9 +72,6 @@ $(document).ready(function() {
                     backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
                 });
-                $('#section1').find('h1').delay(0).css({
-                    opacity: 0,
-                });
             }
 
             //section 3
@@ -88,11 +81,8 @@ $(document).ready(function() {
                     transition: '1.0s'
                 });
                 $('header').css({
-                    backgroundColor: 'rgba(0,0,0,0.8)',
+                    backgroundColor: 'rgba(0,0,0,0)',
                     transition: '1.0s'
-                });
-                $('#section1,#section2').find('h1').delay(0).css({
-                    opacity: 0,
                 });
             }
         }
