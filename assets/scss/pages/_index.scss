@@ -6,7 +6,6 @@
     background-size: cover;
     background-position: center center;
 }
-
 #section1 {
     background-image: url('../images/banner1@2x.jpg');
     background-attachment: fixed;
@@ -14,17 +13,14 @@
         background-attachment: inherit;
     }
 }
-
 #section2 {
     background-image: url('../images/banner2@2x.jpg');
     background-attachment: inherit;
 }
-
 .banner {
     width: 100%;
     height: 100vh;
     position: relative;
-
     h1 {
         position: absolute;
         bottom: 200px;
@@ -38,7 +34,6 @@
             font-size: 2.3em;
         }
     }
-
     a {
         position: absolute;
         bottom: 120px;
@@ -54,7 +49,6 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
-
         &:hover {
             background-color: $color-tertiary;
         }
@@ -73,7 +67,6 @@
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }
-
 .scroll {
     display: block;
     width: 3px;
@@ -90,7 +83,6 @@
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -103,7 +95,6 @@
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -114,7 +105,6 @@
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -125,7 +115,6 @@
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -137,7 +126,6 @@
     margin-top: 60px;
     margin-bottom: 60px;
     position: relative;
-
     h1 {
         width: 100%;
         position: absolute;
@@ -145,139 +133,122 @@
         line-height: 1.05;
         color: $color-primary;
         font-family: $font-sans-bold;
+        z-index: 2;
         @include max-screen(992px) {
             font-size: 2.3em;
         }
     }
-
     p {
         width: 100%;
         position: absolute;
         font-size: 1.2em;
         line-height: 1.4;
         font-family: $font-sans-light;
+        z-index: 2;
     }
-
     .titel-1 {
         top: 100px;
         left: 130px;
-        z-index: 200;
     }
-
     .subtitle-1 {
         top: 320px;
         left: 130px;
-        z-index: 200;
     }
-
     .titel-2 {
         top: 100px;
         left: 0;
-        z-index: 200;
     }
-
     .subtitle-2 {
         top: 160px;
         left: 0;
-        z-index: 200;
     }
-}
-/*--intro button--*/
-.intro-button {
-    margin: 20px auto;
-
-    a {
-        width: 100%;
-        height: 100%;
-        background-color: $color-tertiary;
-        position: relative;
-        overflow: hidden;
-        display: block;
-        z-index: 0;
-
-        img {
-            display: block;
+    /*--intro button--*/
+    .intro-button {
+        margin: 20px auto;
+        a {
             width: 100%;
-            height: auto;
-            margin: 0 auto;
-            border: none;
-            padding: 0;
-            @include opacity(1);
-            @include transform(scale3d(1,1,1));
-            @include transition-property(opacity,transform);
-            @include transition-duration(.4s);
-        }
-
-        .button {
-            position: absolute;
-            width: 90px;
-            height: 90px;
-            left: 50%;
-            top: 50%;
-            margin-left: -45px;
-            margin-top: -45px;
-            border: none;
-            z-index: 1;
-        }
-
-        .hover {
-            position: absolute;
-            width: 94%;
-            height: 94%;
-            top: 3%;
-            left: 3%;
-            z-index: 1;
-            text-align: center;
-            padding-top: 30px;
-            @include transform(scale3d(1.5,1.5,1));
-            @include opacity(0);
-            @include transition-property(visibility, opacity, transform);
-            @include transition-duration(.3s);
-        }
-
-        .button-hover {
-            position: absolute;
-            width: 90px;
-            height: 90px;
-            left: 50%;
-            top: 50%;
-            margin-left: -45px;
-            margin-top: -45px;
+            height: 100%;
+            background-color: $color-tertiary;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
             display: block;
-            border: none;
-        }
-
-        span {
-            display: block;
-            width: 40%;
-            margin: 0 auto;
-            text-transform: uppercase;
-            padding-top: 10px;
-            border-top: 3px double $color-secondary;
-            color: $color-secondary;
-            font-size: 0.938rem;
-        }
-
-        &:hover {
             img {
-                @include opacity(.1);
-                @include transform(scale3d(1.5,1.5,1));
-            }
-
-            .hover {
-                visibility: visible;
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                border: none;
+                padding: 0;
                 @include opacity(1);
                 @include transform(scale3d(1,1,1));
+                @include transition-property(opacity,transform);
+                @include transition-duration(.4s);
+            }
+            .button {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                left: 50%;
+                top: 50%;
+                margin-left: -45px;
+                margin-top: -45px;
+                border: none;
+                z-index: 1;
+            }
+            .hover {
+                position: absolute;
+                width: 94%;
+                height: 94%;
+                top: 3%;
+                left: 3%;
+                z-index: 1;
+                text-align: center;
+                padding-top: 30px;
+                @include transform(scale3d(1.5,1.5,1));
+                @include opacity(0);
+                @include transition-property(visibility, opacity, transform);
+                @include transition-duration(.3s);
+            }
+            .button-hover {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                left: 50%;
+                top: 50%;
+                margin-left: -45px;
+                margin-top: -45px;
+                display: block;
+                border: none;
+            }
+            span {
+                display: block;
+                width: 40%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                padding-top: 10px;
+                border-top: 3px double $color-secondary;
+                color: $color-secondary;
+                font-size: 0.938rem;
+            }
+            &:hover {
+                img {
+                    @include opacity(.1);
+                    @include transform(scale3d(1.5,1.5,1));
+                }
+                .hover {
+                    visibility: visible;
+                    @include opacity(1);
+                    @include transform(scale3d(1,1,1));
+                }
             }
         }
-    }
-
-    .icon-play-hover {
-        background-image: url('../images/btn_play_hover.svg');
-    }
-
-    .icon-arrow-hover {
-        background-image: url('../images/btn_arrow_hover.svg');
+        .icon-play-hover {
+            background-image: url('../images/btn_play_hover.svg');
+        }
+        .icon-arrow-hover {
+            background-image: url('../images/btn_arrow_hover.svg');
+        }
     }
 }
 /*--activity--*/
@@ -288,7 +259,6 @@
     padding-top: 70px;
     padding-bottom: 70px;
     @include max-screen(992px) {}
-
     h1 {
         font-size: 2.5em;
         color: $color-secondary;
@@ -297,7 +267,6 @@
             font-size: 2.3em;
         }
     }
-
     a {
         color: $color-secondary;
         border: 2px solid $color-secondary;
@@ -309,15 +278,104 @@
         padding: 12px 30px;
         margin-top: 3px;
         @include max-screen(992px) {}
-
         &:hover {
             background-color: $color-tertiary;
             border: 2px solid $color-tertiary;
         }
     }
-
     .margin-t {
         margin-top: 30px;
+    }
+    /*--activity button--*/
+    .activity-button {
+        a {
+            width: 100%;
+            height: 100%;
+            background-color: $color-tertiary;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            display: block;
+            border: 0;
+            padding: 0;
+            margin-top: 0;
+            border-radius: 0;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                border: none;
+                padding: 0;
+                @include opacity(1);
+                @include transform(scale3d(1,1,1));
+                @include transition-property(opacity,transform);
+                @include transition-duration(.4s);
+            }
+            .button {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                left: 50%;
+                top: 50%;
+                margin-left: -45px;
+                margin-top: -45px;
+                border: none;
+                z-index: 1;
+            }
+            .hover {
+                position: absolute;
+                width: 94%;
+                height: 94%;
+                top: 3%;
+                left: 3%;
+                z-index: 1;
+                text-align: center;
+                padding-top: 30px;
+                @include transform(scale3d(1.5,1.5,1));
+                @include opacity(0);
+                @include transition-property(visibility, opacity, transform);
+                @include transition-duration(.3s);
+            }
+            .button-hover {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                left: 50%;
+                top: 50%;
+                margin-left: -45px;
+                margin-top: -45px;
+                display: block;
+                border: none;
+            }
+            span {
+                display: block;
+                width: 40%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                padding-top: 10px;
+                border-top: 3px double $color-secondary;
+                color: $color-secondary;
+                font-size: 0.938rem;
+            }
+            &:hover {
+                img {
+                    @include opacity(.1);
+                    @include transform(scale3d(1.5,1.5,1));
+                }
+                .hover {
+                    visibility: visible;
+                    @include opacity(1);
+                    @include transform(scale3d(1,1,1));
+                }
+            }
+        }
+        .icon-play-hover {
+            background-image: url('../images/btn_play_hover.svg');
+        }
+        .icon-arrow-hover {
+            background-image: url('../images/btn_arrow_hover.svg');
+        }
     }
 }
 /*-- our team--*/
@@ -325,7 +383,6 @@
     padding-top: 70px;
     padding-bottom: 70px;
     @include max-screen(992px) {}
-
     h1 {
         font-size: 2em;
         color: $color-primary;
@@ -336,7 +393,6 @@
             font-size: 2.3em;
         }
     }
-
     a {
         margin: 30px auto 0;
         width: 200px;
@@ -349,31 +405,26 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
-
         &:hover {
             color: $color-secondary;
             background-color: $color-tertiary;
             border: 2px solid $color-tertiary;
         }
     }
-
     .member {
         .shot {
             position: relative;
             margin: 0 25%;
             width: 50%;
-
             .photo {
                 border-radius: 400px;
             }
-
             .type {
                 position: absolute;
                 bottom: 0;
                 right: 0;
             }
         }
-
         h2 {
             font-size: 1em;
             font-family: $font-sans-bold;
@@ -381,7 +432,6 @@
             margin: 15px 0;
             text-align: center;
         }
-
         p {
             font-size: 1em;
             font-family: $font-sans-light;
@@ -399,7 +449,6 @@
     padding-top: 120px;
     padding-bottom: 120px;
     @include max-screen(992px) {}
-
     h1 {
         font-size: 3.8em;
         font-family: $font-sans-bold;
@@ -407,18 +456,16 @@
         text-align: center;
         @include max-screen(992px) {}
     }
-
     p {
         font-size: 1.4em;
         color: $color-secondary;
         font-family: $font-sans-light;
-        margin: 0 0 70px 0;
+        margin: 0 0 70px;
         text-align: center;
         @include max-screen(992px) {
             font-size: 2.3em;
         }
     }
-
     a {
         margin: 30px auto 0;
         width: 240px;
@@ -431,7 +478,6 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
-
         &:hover {
             background-color: $color-tertiary;
         }

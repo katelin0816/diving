@@ -22,12 +22,11 @@ nav {
                 float: none;
             }
             a {
-                color: $color-secondary;
                 font-size: 1em;
                 letter-spacing: 2px;
-                line-height: 3;
+                line-height: 5;
                 font-family: $font-sans-light;
-                padding: 5px 20px;
+                padding: 0 20px;
                 display: block;
                 @include max-screen(992px) {
                     line-height: 2;
@@ -35,6 +34,12 @@ nav {
                 &:hover {
                     color: $color-tertiary;
                 }
+            }
+            .color-blue{
+              color: $color-primary;
+            }
+            .color-white{
+              color: $color-secondary;
             }
         }
     }

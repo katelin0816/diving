@@ -8,8 +8,13 @@ header {
     width: 100%;
     background-color: rgba(0,0,0,0);
     .logo {
-        .logo-content {
-            margin: 20px 0 13px 0;
+        a {
+            padding: 14px;
+            background-color: $color-primary;
+            float: left;
+            &:hover {
+              background-color: $color-tertiary;
+            }
         }
         .toggle-menu {
             float: right;
