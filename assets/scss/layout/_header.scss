@@ -7,15 +7,22 @@ header {
     z-index: 100;
     width: 100%;
     background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(16,6,255,0);
+
     .logo {
         a {
             padding: 14px;
             background-color: $color-primary;
             float: left;
+
             &:hover {
-              background-color: $color-tertiary;
+                background-color: $color-tertiary;
+            }
+            @include max-screen(992px) {
+                display: block;
             }
         }
+
         .toggle-menu {
             float: right;
             display: none;
@@ -37,9 +44,11 @@ header {
                 cursor: pointer;
                 transition: background 0.3s;
             }
+
             .c-hamburger--htx:focus {
                 outline: none;
             }
+
             .c-hamburger--htx span {
                 display: block;
                 position: absolute;
@@ -49,6 +58,7 @@ header {
                 height: 2px;
                 background: white;
             }
+
             .c-hamburger--htx span::after,
             .c-hamburger--htx span::before {
                 position: absolute;
@@ -59,26 +69,33 @@ header {
                 background-color: #fff;
                 content: "";
             }
+
             .c-hamburger--htx span::before {
                 top: -10px;
             }
+
             .c-hamburger--htx span::after {
                 bottom: -10px;
             }
+
             .c-hamburger--htx {
                 background-color: rgba(66,25,34,0);
             }
+
             .c-hamburger--htx span {
                 transition: background 0s 0.3s;
             }
+
             .c-hamburger--htx span::after,
             .c-hamburger--htx span::before {
                 transition-duration: 0.3s, 0.3s;
                 transition-delay: 0.3s, 0s;
             }
+
             .c-hamburger--htx span::before {
                 transition-property: top, transform;
             }
+
             .c-hamburger--htx span::after {
                 transition-property: bottom, transform;
             }
@@ -86,17 +103,21 @@ header {
             .c-hamburger--htx.is-active {
                 background-color: rgba(29,25,34,0);
             }
+
             .c-hamburger--htx.is-active span {
                 background: none;
             }
+
             .c-hamburger--htx.is-active span::before {
                 top: 0;
                 transform: rotate(45deg);
             }
+
             .c-hamburger--htx.is-active span::after {
                 bottom: 0;
                 transform: rotate(-45deg);
             }
+
             .c-hamburger--htx.is-active span::after,
             .c-hamburger--htx.is-active span::before {
                 transition-delay: 0s, 0.3s;

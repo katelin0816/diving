@@ -9,6 +9,7 @@ $(document).ready(function() {
     pic.src = "assets/images/banner1.jpg";
     pic2.src = "assets/images/banner2.jpg";
 
+
     //判斷如果是ios設備
     function iOS() {
 
@@ -80,6 +81,7 @@ $(document).ready(function() {
                 });
                 $('header').css({
                     backgroundColor: 'rgba(0,0,0,0)',
+                    borderBottom: '1px solid rgba(16,6,255,0)',
                     transition: '1.0s'
                 });
                 $('nav ul li a').removeClass("color-blue").addClass("color-white");
@@ -93,6 +95,7 @@ $(document).ready(function() {
                 });
                 $('header').css({
                     backgroundColor: 'rgba(255,255,255,0.9)',
+                    borderBottom: '1px solid rgba(16,6,255,1)',
                     transition: '1.0s'
                 });
                 $('nav ul li a').removeClass("color-white").addClass("color-blue");
@@ -100,6 +103,8 @@ $(document).ready(function() {
         }
 
     });
+
+
 
 
 });
