@@ -10,23 +10,6 @@ $(document).ready(function() {
     pic2.src = "assets/images/banner2.jpg";
 
 
-
-
-    function logoResize() {
-        var logo = document.getElementById("logoRWD");
-        if ($(window).width() <= 768) {
-            logo.width = "38";
-            logo.height = "38";
-        } else {
-            logo.width = "42";
-            logo.height = "42";
-        };
-    };
-    logoResize();
-
-
-
-
     //判斷如果是ios設備
     function iOS() {
 
