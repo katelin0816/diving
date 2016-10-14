@@ -5497,6 +5497,12 @@ header .logo a:hover {
   background-color: #F9592C;
 }
 
+@media screen and (max-width: 992px) {
+  header .logo a {
+    display: block;
+  }
+}
+
 header .logo .toggle-menu {
   float: right;
   display: none;

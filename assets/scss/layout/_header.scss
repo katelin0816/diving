@@ -16,6 +16,9 @@ header {
             &:hover {
               background-color: $color-tertiary;
             }
+            @include max-screen(992px) {
+                display: block;
+            }
         }
         .toggle-menu {
             float: right;
