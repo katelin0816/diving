@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center center;
 }
+
 #section1 {
     background-image: url('../images/banner1@2x.jpg');
     background-attachment: fixed;
@@ -13,14 +14,17 @@
         background-attachment: inherit;
     }
 }
+
 #section2 {
     background-image: url('../images/banner2@2x.jpg');
     background-attachment: inherit;
 }
+
 .banner {
     width: 100%;
     height: 100vh;
     position: relative;
+
     h1 {
         position: absolute;
         bottom: 200px;
@@ -34,6 +38,7 @@
             font-size: 2.3em;
         }
     }
+
     a {
         position: absolute;
         bottom: 120px;
@@ -49,6 +54,7 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
+
         &:hover {
             background-color: $color-tertiary;
         }
@@ -67,6 +73,7 @@
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }
+
 .scroll {
     display: block;
     width: 3px;
@@ -83,6 +90,7 @@
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -95,6 +103,7 @@
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -105,6 +114,7 @@
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -115,6 +125,7 @@
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -126,6 +137,7 @@
     margin-top: 60px;
     margin-bottom: 60px;
     position: relative;
+
     h1 {
         width: 100%;
         position: absolute;
@@ -139,6 +151,7 @@
             position: static;
         }
     }
+
     p {
         width: 100%;
         position: absolute;
@@ -146,26 +159,27 @@
         line-height: 1.4;
         font-family: $font-sans-light;
         z-index: 2;
-<<<<<<< HEAD
         @include max-screen(992px) {
             font-size: 1em;
             position: static;
         }
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
     }
+
     .titel-1 {
         top: 100px;
         left: 130px;
     }
+
     .subtitle-1 {
         top: 320px;
         left: 130px;
     }
+
     .titel-2 {
         top: 100px;
         left: 0;
     }
+
     .subtitle-2 {
         top: 160px;
         left: 0;
@@ -173,10 +187,7 @@
     /*--intro button--*/
     .intro-button {
         margin: 20px auto;
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
         a {
             width: 100%;
             height: 100%;
@@ -185,10 +196,7 @@
             z-index: 0;
             overflow: hidden;
             display: block;
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             img {
                 display: block;
                 width: 100%;
@@ -201,10 +209,7 @@
                 @include transition-property(opacity,transform);
                 @include transition-duration(.4s);
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             .button {
                 position: absolute;
                 width: 90px;
@@ -216,10 +221,7 @@
                 border: none;
                 z-index: 1;
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             .hover {
                 position: absolute;
                 width: 94%;
@@ -234,10 +236,7 @@
                 @include transition-property(visibility, opacity, transform);
                 @include transition-duration(.3s);
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             .button-hover {
                 position: absolute;
                 width: 90px;
@@ -249,10 +248,7 @@
                 display: block;
                 border: none;
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             span {
                 display: block;
                 width: 40%;
@@ -263,19 +259,13 @@
                 color: $color-secondary;
                 font-size: 0.938rem;
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             &:hover {
                 img {
                     @include opacity(.1);
                     @include transform(scale3d(1.5,1.5,1));
                 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                 .hover {
                     visibility: visible;
                     @include opacity(1);
@@ -283,17 +273,11 @@
                 }
             }
         }
-<<<<<<< HEAD
 
         .icon-play-hover {
             background-image: url('../images/btn_play_hover.svg');
         }
 
-=======
-        .icon-play-hover {
-            background-image: url('../images/btn_play_hover.svg');
-        }
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
         .icon-arrow-hover {
             background-image: url('../images/btn_arrow_hover.svg');
         }
@@ -307,6 +291,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     @include max-screen(992px) {}
+
     h1 {
         font-size: 1.5em;
         color: $color-secondary;
@@ -317,6 +302,7 @@
             margin: 0 0 5px 0;
         }
     }
+
     a {
         color: $color-secondary;
         border: 2px solid $color-secondary;
@@ -327,21 +313,18 @@
         float: right;
         padding: 12px 30px;
         margin-top: 3px;
-<<<<<<< HEAD
         @include max-screen(768px) {
           width: 100%;
           text-align: center;
           margin-bottom:10px;
         }
 
-=======
-        @include max-screen(992px) {}
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
         &:hover {
             background-color: $color-tertiary;
             border: 2px solid $color-tertiary;
         }
     }
+
     .margin-t {
         margin-top: 30px;
     }
@@ -350,10 +333,6 @@
         a {
             width: 100%;
             height: 100%;
-<<<<<<< HEAD
-=======
-            background-color: $color-secondary;
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
             position: relative;
             z-index: 0;
             overflow: hidden;
@@ -362,16 +341,10 @@
             padding: 0;
             margin-top: 0;
             border-radius: 0;
-<<<<<<< HEAD
             letter-spacing: 0;
 
             img {
                 display: block;
-=======
-            img {
-                display: block;
-                width: 100%;
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                 height: auto;
                 margin: 0 auto;
                 border: none;
@@ -380,7 +353,6 @@
                 @include transform(scale3d(1,1,1));
                 @include transition-property(opacity,transform);
                 @include transition-duration(.4s);
-<<<<<<< HEAD
                 @include max-screen(767px) {
                   margin: 0;
                   width: 100%;
@@ -423,21 +395,13 @@
             }
 
             .animate {
-=======
-            }
-            div {
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                 position: absolute;
                 width: 94%;
                 height: 94%;
                 top: 3%;
                 left: 3%;
                 z-index: 1;
-<<<<<<< HEAD
                 border: 4px solid rgba($color-secondary, 1);
-=======
-                border: 1px solid rgba($color-secondary, 0.3);
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                 text-align: center;
                 padding-top: 30px;
                 @include transform(scale3d(1.5,1.5,1));
@@ -446,7 +410,6 @@
                 @include transition-duration(.3s);
                 padding-top: 60px;
             }
-<<<<<<< HEAD
 
             .icon-main {
                 display: block;
@@ -480,31 +443,6 @@
                 }
 
                 .animate {
-=======
-            i {
-                color: $color-secondary;
-                font-size: 6rem;
-                display: block;
-                opacity: 0.8;
-                margin-bottom: 20px;
-            }
-            span {
-                display: block;
-                width: 40%;
-                margin: 0 auto;
-                text-transform: uppercase;
-                padding-top: 10px;
-                border-top: 3px double $color-secondary;
-                color: $color-secondary;
-                font-size: 0.938rem;
-            }
-            &:hover {
-                img {
-                    @include opacity(1);
-                    @include transform(scale3d(1.5,1.5,1));
-                }
-                div {
->>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                     visibility: visible;
                     @include opacity(1);
                     @include transform(scale3d(1,1,1));
@@ -518,6 +456,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     @include max-screen(992px) {}
+
     h1 {
         font-size: 2em;
         color: $color-primary;
@@ -528,6 +467,7 @@
             font-size: 2.3em;
         }
     }
+
     a {
         margin: 30px auto 0;
         width: 200px;
@@ -540,26 +480,31 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
+
         &:hover {
             color: $color-secondary;
             background-color: $color-tertiary;
             border: 2px solid $color-tertiary;
         }
     }
+
     .member {
         .shot {
             position: relative;
             margin: 0 25%;
             width: 50%;
+
             .photo {
                 border-radius: 400px;
             }
+
             .type {
                 position: absolute;
                 bottom: 0;
                 right: 0;
             }
         }
+
         h2 {
             font-size: 1em;
             font-family: $font-sans-bold;
@@ -567,6 +512,7 @@
             margin: 15px 0;
             text-align: center;
         }
+
         p {
             font-size: 1em;
             font-family: $font-sans-light;
@@ -584,6 +530,7 @@
     padding-top: 120px;
     padding-bottom: 120px;
     @include max-screen(992px) {}
+
     h1 {
         font-size: 3.8em;
         font-family: $font-sans-bold;
@@ -591,6 +538,7 @@
         text-align: center;
         @include max-screen(992px) {}
     }
+
     p {
         font-size: 1.4em;
         color: $color-secondary;
@@ -601,6 +549,7 @@
             font-size: 2.3em;
         }
     }
+
     a {
         margin: 30px auto 0;
         width: 240px;
@@ -613,6 +562,7 @@
         border-radius: 100px;
         display: block;
         @include max-screen(992px) {}
+
         &:hover {
             background-color: $color-tertiary;
         }
