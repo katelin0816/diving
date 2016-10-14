@@ -97,7 +97,10 @@ $(document).ready(function() {
                 });
                 $('header').css({
                     backgroundColor: 'rgba(255,255,255,0.9)',
+<<<<<<< HEAD
                     borderBottom: '1px solid rgba(16,6,255,1)',
+=======
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
                     transition: '1.0s'
                 });
                 $('nav ul li a').removeClass("color-white").addClass("color-blue");

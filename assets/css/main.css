@@ -5864,6 +5864,7 @@ footer a:hover {
   line-height: 1.4;
   font-family: "montserratLight", sans-serif;
   z-index: 2;
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 992px) {
@@ -5871,6 +5872,8 @@ footer a:hover {
     font-size: 1em;
     position: static;
   }
+=======
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
 }
 
 .intro .titel-1 {
@@ -6077,6 +6080,10 @@ footer a:hover {
 .activity .activity-button a {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+=======
+  background-color: #FFFFFF;
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -6085,11 +6092,18 @@ footer a:hover {
   padding: 0;
   margin-top: 0;
   border-radius: 0;
+<<<<<<< HEAD
   letter-spacing: 0;
+=======
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
 }
 
 .activity .activity-button a img {
   display: block;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   height: auto;
   margin: 0 auto;
   border: none;
@@ -6111,6 +6125,7 @@ footer a:hover {
   transition-duration: 0.4s;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
   .activity .activity-button a img {
     margin: 0;
@@ -6165,13 +6180,20 @@ footer a:hover {
 }
 
 .activity .activity-button a .animate {
+=======
+.activity .activity-button a div {
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   position: absolute;
   width: 94%;
   height: 94%;
   top: 3%;
   left: 3%;
   z-index: 1;
+<<<<<<< HEAD
   border: 4px solid white;
+=======
+  border: 1px solid rgba(255, 255, 255, 0.3);
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   text-align: center;
   padding-top: 30px;
   -moz-transform: scale3d(1.5, 1.5, 1);
@@ -6192,6 +6214,7 @@ footer a:hover {
   padding-top: 60px;
 }
 
+<<<<<<< HEAD
 .activity .activity-button a .icon-main {
   display: block;
   margin-top: 160px;
@@ -6223,6 +6246,30 @@ footer a:hover {
 }
 
 .activity .activity-button a:hover img {
+=======
+.activity .activity-button a i {
+  color: #FFFFFF;
+  font-size: 6rem;
+  display: block;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.activity .activity-button a span {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-top: 10px;
+  border-top: 3px double #FFFFFF;
+  color: #FFFFFF;
+  font-size: 0.938rem;
+}
+
+.activity .activity-button a:hover img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   -moz-transform: scale3d(1.5, 1.5, 1);
   -o-transform: scale3d(1.5, 1.5, 1);
   -ms-transform: scale3d(1.5, 1.5, 1);
@@ -6230,7 +6277,11 @@ footer a:hover {
   transform: scale3d(1.5, 1.5, 1);
 }
 
+<<<<<<< HEAD
 .activity .activity-button a:hover .animate {
+=======
+.activity .activity-button a:hover div {
+>>>>>>> e41a49f6ea655770ef101de304c37a60e412a80b
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
