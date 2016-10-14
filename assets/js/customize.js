@@ -9,6 +9,9 @@ $(document).ready(function() {
     pic.src = "assets/images/banner1.jpg";
     pic2.src = "assets/images/banner2.jpg";
 
+
+
+
     //判斷如果是ios設備
     function iOS() {
 
@@ -38,7 +41,7 @@ $(document).ready(function() {
 
     //fullpage js
     $('#fullpage').fullpage({
-        sectionsColor: ['#333', '#666', '#FFF'],
+        sectionsColor: ['#1006FF', '#F9592C', '#FFFFFF'],
         navigation: true,
         verticalCentered: false,
         css3: true,
@@ -50,8 +53,9 @@ $(document).ready(function() {
         afterLoad: function(anchorLink, index) {
 
             $(".iScrollVerticalScrollbar, .iScrollLoneScrollbar").css({
-                "display": "none"
+            "display": "none"
             });
+
 
 
             //section 2
@@ -60,6 +64,11 @@ $(document).ready(function() {
                     opacity: 1,
                     transition: '1.0s'
                 });
+                $('#section2').find('h1').delay(0).css({
+                    opacity: 0,
+                    transition: '1.0s'
+                });
+                $('nav ul li a').removeClass("color-blue").addClass("color-white");
             }
 
             //section 2
@@ -68,26 +77,36 @@ $(document).ready(function() {
                     opacity: 1,
                     transition: '1.0s'
                 });
-                $('header').css({
-                    backgroundColor: 'rgba(0,0,0,0)',
+                $('#section1').find('h1').delay(0).css({
+                    opacity: 0,
                     transition: '1.0s'
                 });
+                $('header').css({
+                    backgroundColor: 'rgba(0,0,0,0)',
+                    borderBottom: '1px solid rgba(16,6,255,0)',
+                    transition: '1.0s'
+                });
+                $('nav ul li a').removeClass("color-blue").addClass("color-white");
             }
 
             //section 3
             if (index == 3) {
-                $('#section3').find('h1').delay(0).css({
-                    opacity: 1,
+                $('#section1,#section2').find('h1').delay(0).css({
+                    opacity: 0,
                     transition: '1.0s'
                 });
                 $('header').css({
-                    backgroundColor: 'rgba(0,0,0,0)',
+                    backgroundColor: 'rgba(255,255,255,0.9)',
+                    borderBottom: '1px solid rgba(16,6,255,1)',
                     transition: '1.0s'
                 });
+                $('nav ul li a').removeClass("color-white").addClass("color-blue");
             }
         }
 
     });
+
+
 
 
 });

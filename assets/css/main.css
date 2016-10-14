@@ -7,7 +7,7 @@
 /*ORANGE*/
 /*VERY DEEP BLUE*/
 /*LIGHT GRAY*/
-/*VERY DEEP BLUE*/
+/*DARK GRAY*/
 /*VERY DEEP BLUE*/
 /*VERY DEEP BLUE*/
 /*LIGHT GRAY*/
@@ -2670,7 +2670,7 @@ html.fp-enabled,
 }
 
 .fp-scrollable {
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .fp-notransition {
@@ -2837,8 +2837,8 @@ html.fp-enabled,
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../font-awesome//fontawesome-webfont.eot?v=4.4.0");
-  src: url("../font-awesome//fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../font-awesome//fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../font-awesome//fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../font-awesome//fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../font-awesome//fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../scss/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5484,10 +5484,17 @@ header {
   z-index: 100;
   width: 100%;
   background-color: transparent;
+  border-bottom: 1px solid rgba(16, 6, 255, 0);
 }
 
-header .logo .logo-content {
-  margin: 20px 0 13px 0;
+header .logo a {
+  padding: 14px;
+  background-color: #1006FF;
+  float: left;
+}
+
+header .logo a:hover {
+  background-color: #F9592C;
 }
 
 header .logo .toggle-menu {
@@ -5632,12 +5639,11 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #FFFFFF;
   font-size: 1em;
   letter-spacing: 2px;
-  line-height: 3;
+  line-height: 5;
   font-family: "montserratLight", sans-serif;
-  padding: 5px 20px;
+  padding: 0 20px;
   display: block;
 }
 
@@ -5651,11 +5657,38 @@ nav ul li a:hover {
   color: #F9592C;
 }
 
+nav ul li .color-blue {
+  color: #1006FF;
+}
+
+nav ul li .color-white {
+  color: #FFFFFF;
+}
+
 /* ------------------------------------------------------------------ */
 /* footer
 /* ------------------------------------------------------------------ */
 footer {
   background-color: #F9592C;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+footer p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #FFFFFF;
+  font-family: "montserratLight", sans-serif;
+}
+
+footer a {
+  font-size: 1.5em;
+  color: #FFFFFF;
+  padding: 0 15px;
+}
+
+footer a:hover {
+  color: #1006FF;
 }
 
 /* ------------------------------------------------------------------ */
@@ -5804,6 +5837,7 @@ footer {
   margin-top: 60px;
   margin-bottom: 60px;
   position: relative;
+  /*--intro button--*/
 }
 
 .intro h1 {
@@ -5813,11 +5847,13 @@ footer {
   line-height: 1.05;
   color: #1006FF;
   font-family: "montserratBold", sans-serif;
+  z-index: 2;
 }
 
 @media screen and (max-width: 992px) {
   .intro h1 {
     font-size: 2.3em;
+    position: static;
   }
 }
 
@@ -5827,48 +5863,51 @@ footer {
   font-size: 1.2em;
   line-height: 1.4;
   font-family: "montserratLight", sans-serif;
+  z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .intro p {
+    font-size: 1em;
+    position: static;
+  }
 }
 
 .intro .titel-1 {
   top: 100px;
   left: 130px;
-  z-index: 200;
 }
 
 .intro .subtitle-1 {
   top: 320px;
   left: 130px;
-  z-index: 200;
 }
 
 .intro .titel-2 {
   top: 100px;
   left: 0;
-  z-index: 200;
 }
 
 .intro .subtitle-2 {
   top: 160px;
   left: 0;
-  z-index: 200;
 }
 
-/*--intro button--*/
-.intro-button {
+.intro .intro-button {
   margin: 20px auto;
 }
 
-.intro-button a {
+.intro .intro-button a {
   width: 100%;
   height: 100%;
   background-color: #F9592C;
   position: relative;
+  z-index: 0;
   overflow: hidden;
   display: block;
-  z-index: 0;
 }
 
-.intro-button a img {
+.intro .intro-button a img {
   display: block;
   width: 100%;
   height: auto;
@@ -5892,7 +5931,7 @@ footer {
   transition-duration: 0.4s;
 }
 
-.intro-button a .button {
+.intro .intro-button a .button {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -5904,7 +5943,7 @@ footer {
   z-index: 1;
 }
 
-.intro-button a .hover {
+.intro .intro-button a .hover {
   position: absolute;
   width: 94%;
   height: 94%;
@@ -5930,7 +5969,7 @@ footer {
   transition-duration: 0.3s;
 }
 
-.intro-button a .button-hover {
+.intro .intro-button a .button-hover {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -5942,7 +5981,7 @@ footer {
   border: none;
 }
 
-.intro-button a span {
+.intro .intro-button a span {
   display: block;
   width: 40%;
   margin: 0 auto;
@@ -5953,7 +5992,7 @@ footer {
   font-size: 0.938rem;
 }
 
-.intro-button a:hover img {
+.intro .intro-button a:hover img {
   opacity: 0.1;
   filter: alpha(opacity=10);
   -moz-transform: scale3d(1.5, 1.5, 1);
@@ -5963,7 +6002,7 @@ footer {
   transform: scale3d(1.5, 1.5, 1);
 }
 
-.intro-button a:hover .hover {
+.intro .intro-button a:hover .hover {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -5974,11 +6013,11 @@ footer {
   transform: scale3d(1, 1, 1);
 }
 
-.intro-button .icon-play-hover {
+.intro .intro-button .icon-play-hover {
   background-image: url("../images/btn_play_hover.svg");
 }
 
-.intro-button .icon-arrow-hover {
+.intro .intro-button .icon-arrow-hover {
   background-image: url("../images/btn_arrow_hover.svg");
 }
 
@@ -5989,17 +6028,20 @@ footer {
   background-image: url("../images/banner3@2x.jpg");
   padding-top: 70px;
   padding-bottom: 70px;
+  /*--activity button--*/
 }
 
 .activity h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .activity h1 {
-    font-size: 2.3em;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 5px 0;
   }
 }
 
@@ -6015,6 +6057,14 @@ footer {
   margin-top: 3px;
 }
 
+@media screen and (max-width: 768px) {
+  .activity a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 .activity a:hover {
   background-color: #F9592C;
   border: 2px solid #F9592C;
@@ -6022,6 +6072,173 @@ footer {
 
 .activity .margin-t {
   margin-top: 30px;
+}
+
+.activity .activity-button a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin-top: 0;
+  border-radius: 0;
+  letter-spacing: 0;
+}
+
+.activity .activity-button a img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  -webkit-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .activity .activity-button a img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.activity .activity-button a .title {
+  width: 92%;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 40px;
+  left: 4%;
+  z-index: 1;
+}
+
+.activity .activity-button a h2 {
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.activity .activity-button a h3 {
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.activity .activity-button a p {
+  width: 92%;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 20px;
+  left: 4%;
+  z-index: 1;
+}
+
+.activity .activity-button a .trans {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  -webkit-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.activity .activity-button a .animate {
+  position: absolute;
+  width: 94%;
+  height: 94%;
+  top: 3%;
+  left: 3%;
+  z-index: 1;
+  border: 4px solid white;
+  text-align: center;
+  padding-top: 30px;
+  -moz-transform: scale3d(1.5, 1.5, 1);
+  -o-transform: scale3d(1.5, 1.5, 1);
+  -ms-transform: scale3d(1.5, 1.5, 1);
+  -webkit-transform: scale3d(1.5, 1.5, 1);
+  transform: scale3d(1.5, 1.5, 1);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transition-property: visibility, opacity, transform;
+  -o-transition-property: visibility, opacity, transform;
+  -webkit-transition-property: visibility, opacity, transform;
+  transition-property: visibility, opacity, transform;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding-top: 60px;
+}
+
+.activity .activity-button a .icon-main {
+  display: block;
+  margin-top: 160px;
+  margin-bottom: 20px;
+}
+
+.activity .activity-button a .icon {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.activity .activity-button a span {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+  color: #FFFFFF;
+  font-size: 1.8em;
+}
+
+.activity .activity-button a:hover {
+  background: none;
+}
+
+.activity .activity-button a:hover .trans {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.activity .activity-button a:hover img {
+  -moz-transform: scale3d(1.5, 1.5, 1);
+  -o-transform: scale3d(1.5, 1.5, 1);
+  -ms-transform: scale3d(1.5, 1.5, 1);
+  -webkit-transform: scale3d(1.5, 1.5, 1);
+  transform: scale3d(1.5, 1.5, 1);
+}
+
+.activity .activity-button a:hover .animate {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
 /*-- our team--*/
@@ -6115,7 +6332,7 @@ footer {
   font-size: 1.4em;
   color: #FFFFFF;
   font-family: "montserratLight", sans-serif;
-  margin: 0 0 70px 0;
+  margin: 0 0 70px;
   text-align: center;
 }
 

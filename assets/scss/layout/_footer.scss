@@ -1,6 +1,22 @@
 /* ------------------------------------------------------------------ */
 /* footer
 /* ------------------------------------------------------------------ */
-footer{
-  background-color: $color-tertiary;
+footer {
+    background-color: $color-tertiary;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        color: $color-secondary;
+        font-family: $font-sans-light;
+    }
+    a {
+        font-size: 1.5em;
+        color: $color-secondary;
+        padding: 0 15px;
+        &:hover {
+            color: $color-primary;
+        }
+    }
 }
